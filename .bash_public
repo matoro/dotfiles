@@ -1,0 +1,46 @@
+# set PS1
+PS1='[\u@\h \W]\$ '
+
+# ranger indentation
+[[ -n "$RANGER_LEVEL" ]] && PS1="$PS1"'(in ranger) '
+
+# env variables
+export QT_SELECT=4
+export NO_AT_BRIDGE=1
+export TZ=":/etc/localtime"
+export SAL_USE_VCLPLUGIN=gtk
+export COLORFGBG="default;default"
+
+# command default options
+alias ls='ls --color=auto --human-readable -l -v'
+alias grep='grep --color=auto'
+alias dfc='dfc -d -T -s'
+alias glances='glances --hide-kernel-threads'
+
+# command verbosity
+alias cp='cp --verbose'
+alias rm='rm --verbose'
+alias mv='mv --verbose'
+alias mkdir='mkdir --verbose'
+alias rmdir='rmdir --verbose'
+alias chmod='chmod --verbose'
+alias trash='trash --verbose'
+
+# utility commands
+alias weather='curl --insecure "https://wttr.in/"'
+alias largefiles='sudo du -a / | sort -n -r | head -n 100'
+alias badpkgs='for pkg in $(pacman -Qqd); do [[ -z $(comm -12 <(pactree -r $pkg -u | sort) <(pacman -Qqe | sort)) ]] && echo $pkg; done'
+alias rsync-default='rsync --archive --verbose --progress --compress --human-readable --update'
+alias pingtest='ping -v -c 4 -O -D archlinux.org'
+alias pingstd='ping -v -c 4 -O -D'
+alias dl='curl --location --remote-name'
+
+alias wwwscan='nmap -A -T4 -v'
+alias netscan='sudo nmap -v -Pn -sS -p80 -iR 0 -open'
+alias localscan='nmap -sn -v 192.168.0.0/24'
+
+alias downmix-flac='(for FILE in *.flac ; do ffmpeg -i "$FILE" -f mp3 -ab 320000 -map_metadata 0 -id3v2_version 3 "`basename "$FILE" .flac`.mp3" || break; done)'
+alias downmix-m4a='(for FILE in *.m4a ; do ffmpeg -i "$FILE" -f mp3 -ab 320000 -map_metadata 0 -id3v2_version 3 "`basename "$FILE" .m4a`.mp3" || break; done)'
+
+alias encrypt='openssl des3 <'
+alias decrypt='openssl des3 -d <'

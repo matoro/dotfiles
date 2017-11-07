@@ -1,0 +1,28 @@
+#set recolor-darkcolor "#ffffff"
+#set recolor-lightcolor "#262a33"
+#set recolor false
+#set recolor-keephue false
+
+#set statusbar-bg "#262a33"
+#set statusbar-fg "#ffffff"
+#set default-fg "#ffffff"
+#set default-bg "#000000"
+#set completion-fg "#ffffff"
+#set completion-bg "#262a33"
+#set completion-highlight-fg "#262a33"
+#set completion-highlight-bg "#ffffff"
+#set inputbar-fg "#ffffff"
+#set inputbar-bg "#262a33"
+#set render-loading-fg "#ffffff"
+#set render-loading-bg "#262a33"
+#set notification-bg "#262a33"
+#set notification-fg "#ffffff"
+#set tabbar-bg "#262a33"
+#set tabbar-fg "#ffffff"
+#set tabbar-focus-bg "#ffffff"
+#set tabbar-focus-fg "#262a33"
+
+set font "Inconsolata 11"
+set guioptions ""
+
+set selection-clipboard clipboard

@@ -1,0 +1,8 @@
+program_options:
+  tray: auto
+  menu: nested
+
+notification_actions:
+  device_mounted:   []
+  device_added:     []
+  job_failed:       []
