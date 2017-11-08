@@ -64,6 +64,7 @@ p7zip
 pamixer
 pavucontrol
 perl-image-exiftool
+polkit
 profile-sync-daemon
 pulseaudio-alsa
 ranger
