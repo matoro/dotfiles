@@ -41,6 +41,7 @@ libreoffice-fresh
 libva-intel-driver
 light
 limf-git
+linux-headers
 lsof
 lxappearance
 megatools
