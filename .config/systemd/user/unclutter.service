@@ -1,0 +1,10 @@
+[Unit]
+Description=unclutter-xfixes cursor hiding
+Documentation=man:unclutter(1)
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/unclutter
+
+[Install]
+WantedBy=graphical.target
