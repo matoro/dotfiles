@@ -11,7 +11,6 @@ cups
 cups-pdf
 curlftpfs
 dfc
-discord
 dmenu
 dnscrypt-proxy
 dosfstools
