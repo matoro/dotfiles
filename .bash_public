@@ -14,7 +14,7 @@ export COLORFGBG="default;default"
 # command default options
 alias ls='ls --color=auto --human-readable -l -v'
 alias grep='grep --color=auto'
-alias dfc='dfc -d -T -s'
+alias dfc='dfc -d -T -s -p -dev,tmpfs,overlay,devtmpfs'
 alias glances='glances --hide-kernel-threads'
 
 # command verbosity
