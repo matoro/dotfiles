@@ -1,6 +1,6 @@
 [global]
 	font = Inconsolata 10
-	allow_markup=no
+	markup=no
 	transparency = 20
 	sort = yes
 	indicate_hidden = yes

@@ -5,7 +5,8 @@ PS1='[\u@\h \W]\$ '
 [[ -n "$RANGER_LEVEL" ]] && PS1="$PS1"'(in ranger) '
 
 # env variables
-export QT_SELECT=4
+#export QT_SELECT=4
+export QT_STYLE_OVERRIDE=gtk2
 export NO_AT_BRIDGE=1
 export TZ=":/etc/localtime"
 export SAL_USE_VCLPLUGIN=gtk
