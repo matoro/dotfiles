@@ -19,7 +19,6 @@ dunst
 exfat-utils
 firefox
 gdb
-geeqie
 git
 gitodo-git
 grub
@@ -74,6 +73,7 @@ shellcheck
 speedtest-cli
 sshfs
 strace
+sxiv
 sysstat
 translate-shell
 trash-cli
