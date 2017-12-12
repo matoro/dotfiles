@@ -50,7 +50,7 @@ URxvt.url-launcher: firefox
 
 URxvt.matcher.button: 1
 
-# custom additions
+! custom additions
 URxvt.scrollTtyOutput: false
 URxvt.scrollWithBuffer: true
 URxvt.scrollTtyKeypress: true
