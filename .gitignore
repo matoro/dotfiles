@@ -26,6 +26,7 @@
 !.config/ranger/rifle.conf
 !.config/ranger/scope.sh
 !.config/systemd/
+!.config/tdm/
 !.config/udiskie/config.yml
 !.config/user-dirs.dirs
 !.config/user-dirs.locale
@@ -38,7 +39,6 @@
 !.gtkrc-2.0
 !.icons/oomox-Grayscale-Dark-flat/
 !.inputrc
-!.tdm/
 !.themes/oomox-Grayscale-Dark/
 !.vimrc
 !.vim/
