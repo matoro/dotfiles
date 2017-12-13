@@ -1,0 +1,6 @@
+[submodule ".vim/pack/plugins/start/neocomplete"]
+	path = .vim/pack/plugins/start/neocomplete
+	url = https://github.com/shougo/neocomplete.git
+[submodule ".vim/pack/plugins/start/airline"]
+	path = .vim/pack/plugins/start/airline
+	url = https://github.com/vim-airline/vim-airline.git
