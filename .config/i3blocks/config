@@ -1,7 +1,7 @@
 command=/usr/lib/i3blocks/$BLOCK_NAME
 
 [mediaplayer]
-command=mpc current || cat /home/matoro/documents/scripting/projects/cradio/song.txt || mpc -h server current || echo
+command=mpc current || cat /home/matoro/documents/scripting/projects/cradio/song.txt || echo
 label=♪
 interval=2
 separator=false
