@@ -46,7 +46,6 @@ alias rsync-default='rsync --archive --verbose --progress --compress --human-rea
 alias pingtest='ping -v -c 4 -O -D archlinux.org'
 alias pingstd='ping -v -c 4 -O -D'
 alias dl='curl --location --remote-name'
-alias vim-update='git submodule update --remote --merge && git commit'
 
 alias wwwscan='nmap -A -T4 -v'
 alias netscan='sudo nmap -v -Pn -sS -p80 -iR 0 -open'

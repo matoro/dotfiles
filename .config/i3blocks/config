@@ -21,26 +21,26 @@ separator=false
 [volume]
 interval=2
 separator=false
-command=if [[ "$(pamixer --get-mute)" == "true" ]] ; then echo "VOL " ; else echo "VOL $(pamixer --get-volume)" ; fi
+command=if [[ "$(pamixer --get-mute)" == "true" ]] ; then echo "V /" ; else echo "V $(pamixer --get-volume)" ; fi
 
 [memory]
-label=
+label=M
 separator=false
 interval=2
 
 [memory]
-label=
+label=S
 instance=swap
 separator=false
 interval=2
 
 [disk]
-label=
+label=D
 interval=2
 separator=false
 
 [iface]
-label=
+label=N
 interval=2
 
 [wifi]
@@ -53,24 +53,25 @@ separator=false
 min_width=90
 
 [cpu_usage]
-label=
+label=C
 interval=2
 separator=false
 min_width=50
 
 [cpu_frequency]
-label=
+label=F
 interval=2
 separator=false
 command=cpupower frequency-info | grep "asserted" | cut --fields=2- --delimiter=":" | cut --characters=2- | cut --fields=1-2 --delimiter=" "
 
 [temperature]
-label=
+label=T
 interval=2
 separator=false
 
 [battery]
-label=⚡
+#label=⚡
+label=P
 interval=2
 separator=false
 

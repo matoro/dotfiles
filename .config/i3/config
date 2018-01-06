@@ -106,7 +106,7 @@ bindsym $mod+Shift+0 move container to workspace number 10
 # numpad hotkeys
 bindsym $mod+Prior exec i3-sensible-terminal -name mutt -e bash -c "pkill mbsync || mutt"
 bindsym $mod+Next exec i3-sensible-terminal -name gpodder -e bash -c "gpo update && gpo download"
-bindsym $mod+End exec i3-sensible-terminal -e tremc
+bindsym $mod+End exec i3-sensible-terminal -e tremc -c server
 
 # letter hotkeys
 bindsym $mod+l exec i3lock-fancy
