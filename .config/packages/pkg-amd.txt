@@ -1,0 +1,3 @@
+libva-mesa-driver
+mesa-vdpau
+xf86-video-amdgpu

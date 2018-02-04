@@ -13,7 +13,7 @@
 
 # Environment variables
 #EDITOR="$EDITOR"
-TMPDIR="/home/matoro/.cache"
+TMPDIR="/home/matoro/.config/cache"
 #VISUAL="$VISUAL"
 
 # SUDO
