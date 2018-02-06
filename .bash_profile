@@ -6,7 +6,7 @@
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-if [[ -x /usr/bin/tdm ]] && [[ ! -n "$SSH_CLIENT" ]] && [[ ! -n "$SSH_TTY" ]]
+if [[ -x /usr/bin/tdm ]] && [[ ! -n "$SSH_CLIENT" ]] && [[ ! -n "$SSH_TTY" ]] && [[ ! -n "$TMUX" ]]
 then
     exec /usr/bin/tdm
 fi
