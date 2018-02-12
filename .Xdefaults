@@ -2,28 +2,41 @@
 ##### CHANGES DONE TO THIS FILE MANUALLY MAY AFFECT THE FUNCTIONALITY ######
 ##### PROCEED WITH CAUTION! #####
 
-*background:  #464646
-*colorUL:  #fdff9f
-*cursorColor:  #ac9f9f
-*foreground:  #f7f7f7
-*underlineColor:  #fdff9f
-*xtermbackground:  #0c1e00
-*color0:  #384625
-*color1:  #c93318
-*color2:  #8ce900
-*color3:  #c9b800
-*color4:  #6d336b
-*color5:  #c93369
-*color6:  #13d26b
-*color7:  #c3c5c0
-*color8:  #7e9a7c
-*color9:  #da7c26
-*color10:  #9cfa00
-*color11:  #dad400
-*color12:  #7c7c7c
-*color13:  #b57c7c
-*color14:  #5cfa54
-*color15:  #ffffff
+! vim: set filetype=xdefaults :
+*foreground: #D7D0C7
+*background: #151515
+
+!black
+! *color0:     #AF875F
+! *color8:     #AF875F
+*color0:     #101010
+*color8:     #404040
+!red
+*color1:     #E84F4F
+*color9:     #D23D3D
+!green
+*color2:     #B8D68C
+*color10:    #A0CF5D
+!yellow
+*color3:     #E1AA5D
+*color11:    #F39D21
+!blue
+*color4:     #7DC1CF
+*color12:    #4E9FB1
+!magenta
+*color5:     #9B64FB
+*color13:    #8542FF
+!cyan
+*color6:     #6D878D
+*color14:    #42717B
+!white
+*color7:     #dddddd
+*color15:    #dddddd
+
+URxvt*borderColor:        #151515
+URxvt*colorBD:            #ffffff
+URxvt*cursorColor:        #ff8939
+URxvt*cursorColor2:       #151515
 
 URxvt*scrollBar:         false
 URxvt*scrollBar_right:   false
