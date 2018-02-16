@@ -10,7 +10,7 @@
 
 <!-- ::: CONSTANTS ::: -->
 <constant name="C_titlebar" value="#101010" />
-<constant name="C_border_focused" value="#101010" />
+<constant name="C_border_focused" value="#7c7c7c" />
 <constant name="C_border_unfocused" value="#101010" />
 <constant name="C_title_focused" value="#a0a0a0" />
 <constant name="C_title_unfocused" value="#7c7c7c" />
