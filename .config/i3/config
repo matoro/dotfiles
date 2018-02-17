@@ -179,10 +179,6 @@ client.urgent $dark $grey $mgrey $lgrey
 
 #initial processes
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id nm-applet
-exec --no-startup-id volumeicon
-exec --no-startup-id systemctl --user start compton.service
-exec --no-startup-id systemctl --user start udiskie.service
-exec --no-startup-id systemctl --user start unclutter.service
-exec --no-startup-id systemctl --user start xss-lock.service
-exec --no-startup-id systemctl --user start transmission.service
+exec --no-startup-id compton
+exec --no-startup-id unclutter
+exec --no-startup-id xss-lock i3lock
