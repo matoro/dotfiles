@@ -181,4 +181,4 @@ client.urgent $dark $grey $mgrey $lgrey
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id compton
 exec --no-startup-id unclutter
-exec --no-startup-id xss-lock i3lock
+exec --no-startup-id xss-lock i3lock-fancy
