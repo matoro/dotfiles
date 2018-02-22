@@ -26,17 +26,17 @@ command=if [[ "$(pamixer --get-mute)" == "true" ]] ; then echo " " ; else 
 [memory]
 label=
 separator=false
-interval=2
+interval=4
 
 [memory]
 label=
 instance=swap
 separator=false
-interval=2
+interval=4
 
 [disk]
 label=
-interval=2
+interval=8
 separator=false
 
 [iface]
@@ -54,24 +54,24 @@ min_width=90
 
 [cpu_usage]
 label=
-interval=2
+interval=4
 separator=false
-min_width=50
+min_width=60
 
 [cpu_frequency]
 label=
-interval=2
+interval=8
 separator=false
 command=cpupower frequency-info | grep "asserted" | cut --fields=2- --delimiter=":" | cut --characters=2- | cut --fields=1-2 --delimiter=" "
 
 [temperature]
 label=
-interval=2
+interval=8
 separator=false
 
 [battery]
 label=⚡
-interval=2
+interval=8
 separator=false
 
 [time]
