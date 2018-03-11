@@ -32,7 +32,6 @@ alias ls='ls --color=auto --human-readable -l -v'
 alias grep='grep --color=auto'
 alias dfc='dfc -d -T -s -p -dev,tmpfs,overlay,devtmpfs'
 alias glances='glances --hide-kernel-threads'
-alias msfconsole='msfconsole -x "db_connect postgres@localhost"';
 
 # command verbosity
 alias cp='cp --verbose'

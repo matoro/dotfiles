@@ -1,0 +1,9 @@
+development: &pgsql
+    adapter: postgresql
+    database: postgres
+    username: postgres
+    host: localhost
+    timeout: 5
+
+production: &produciont
+    <<: *pgsql
