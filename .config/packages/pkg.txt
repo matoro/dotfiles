@@ -95,7 +95,6 @@ valgrind
 vim
 vim-airline
 vim-neocomplete-git
-volumeicon
 w3m
 wget
 xf86-video-vesa

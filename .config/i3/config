@@ -121,9 +121,9 @@ bindsym $mod+j exec i3-sensible-terminal -e bashmount
 bindsym $mod+p exec systemctl suspend
 bindsym $mod+y exec "sleep 1; xset dpms force off"
 bindsym Print exec scrot -e 'mv $f ~/pictures/screenshots/'
-bindsym XF86AudioMute exec pamixer --toggle-mute
-bindsym XF86AudioLowerVolume exec pamixer --decrease 5
-bindsym XF86AudioRaiseVolume exec pamixer --increase 5
+bindsym XF86AudioMute exec amixer -q sset Master toggle
+bindsym XF86AudioLowerVolume exec amixer -q sset Master 5%-
+bindsym XF86AudioRaiseVolume exec amixer -q sset Master 5%+
 bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioNext exec mpc next
 bindsym XF86AudioPrev exec mpc prev

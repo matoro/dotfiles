@@ -19,9 +19,9 @@ separator=false
 #separator=false
 
 [volume]
+label= 
 interval=2
 separator=false
-command=if [[ "$(pamixer --get-mute)" == "true" ]] ; then echo " " ; else echo " $(pamixer --get-volume)" ; fi
 
 [memory]
 label=
