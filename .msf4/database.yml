@@ -1,9 +1,8 @@
-development: &pgsql
+production:
     adapter: postgresql
     database: postgres
     username: postgres
-    host: localhost
+    host: 127.0.0.1
+    port: 5432
+    pool: 200
     timeout: 5
-
-production: &production
-    <<: *pgsql
