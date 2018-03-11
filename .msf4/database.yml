@@ -5,5 +5,5 @@ development: &pgsql
     host: localhost
     timeout: 5
 
-production: &produciont
+production: &production
     <<: *pgsql
