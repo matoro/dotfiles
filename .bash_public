@@ -4,6 +4,12 @@ PS1='[\u@\h \W]\$ '
 # ranger indentation
 [[ -n "$RANGER_LEVEL" ]] && PS1="$PS1"'(in ranger) '
 
+# tools of choice
+export PAGER=less
+export EDITOR=vim
+export VISUAL=vim
+export BROWSER=firefox
+
 # env variables
 export QT_STYLE_OVERRIDE=gtk2
 export NO_AT_BRIDGE=1

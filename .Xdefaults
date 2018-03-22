@@ -71,3 +71,4 @@ URxvt.scrollTtyOutput: false
 URxvt.scrollWithBuffer: true
 URxvt.scrollTtyKeypress: true
 URxvt.saveLines: 65500
+URxvt.geometry: 95x25

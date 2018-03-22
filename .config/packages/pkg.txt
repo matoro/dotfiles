@@ -1,4 +1,6 @@
 acpi
+adobe-source-han-sans-otc-fonts
+adobe-source-han-serif-otc-fonts
 alsa-utils
 atool
 bashmount
@@ -78,11 +80,8 @@ strace
 sxiv
 sysstat
 translate-shell
-trash-cli
-ttf-baekmuk
 ttf-dejavu
 ttf-inconsolata
-ttf-sazanami
 tzupdate
 udiskie
 unclutter-xfixes-git

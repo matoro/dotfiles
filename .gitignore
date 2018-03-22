@@ -21,12 +21,11 @@
 !.config/ncmpcpp/config
 !.config/neofetch/config
 !.config/nitrogen/bg-saved.cfg
-!.config/packages.txt
+!.config/packages/
 !.config/psd/psd.conf
 !.config/ranger/rc.conf
 !.config/ranger/rifle.conf
 !.config/ranger/scope.sh
-!.config/systemd/
 !.config/tdm/
 !.config/udiskie/config.yml
 !.config/user-dirs.dirs
