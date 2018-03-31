@@ -9,6 +9,7 @@ export PAGER=less
 export EDITOR=vim
 export VISUAL=vim
 export BROWSER=firefox
+export TERMINAL=urxvt
 
 # env variables
 export QT_STYLE_OVERRIDE=gtk2
