@@ -92,8 +92,6 @@ urxvt-resize-font-git
 urxvtconfig
 valgrind
 vim
-vim-airline
-vim-neocomplete-git
 w3m
 wget
 xf86-video-vesa
