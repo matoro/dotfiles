@@ -106,12 +106,11 @@ bindsym $mod+Shift+0 move container to workspace number 10
 # numpad hotkeys
 bindsym $mod+Prior exec i3-sensible-terminal -name mutt -e bash -c "pkill mbsync || mutt"
 bindsym $mod+Next exec i3-sensible-terminal -name gpodder -e bash -c "gpo update && gpo download"
-bindsym $mod+End exec i3-sensible-terminal -e tremc -c server
+bindsym $mod+End exec i3-sensible-terminal -e tremc
 
 # letter hotkeys
-bindsym $mod+l exec i3lock-fancy
-bindsym $mod+z exec i3-sensible-terminal -e ranger
-bindsym $mod+n exec i3-sensible-terminal -e nmtui
+bindsym $mod+l exec i3lock-fancy-dualmonitor
+bindsym $mod+z exec i3-sensible-terminal -e lf
 bindsym $mod+i exec i3-input
 bindsym $mod+m exec i3-sensible-terminal -e ncmpcpp
 bindsym $mod+b exec pavucontrol
@@ -124,6 +123,9 @@ bindsym Print exec scrot -e 'mv $f ~/pictures/screenshots/'
 bindsym XF86AudioMute exec amixer -q sset Master toggle
 bindsym XF86AudioLowerVolume exec amixer -q sset Master 5%-
 bindsym XF86AudioRaiseVolume exec amixer -q sset Master 5%+
+bindsym $mod+F2 exec amixer -q sset Master toggle
+bindsym $mod+F3 exec amixer -q sset Master 5%-
+bindsym $mod+F4 exec amixer -q sset Master 5%+
 bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioNext exec mpc next
 bindsym XF86AudioPrev exec mpc prev
@@ -181,4 +183,4 @@ client.urgent $dark $grey $mgrey $lgrey
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id compton
 exec --no-startup-id unclutter
-exec --no-startup-id xss-lock i3lock-fancy
+exec --no-startup-id xss-lock i3lock-fancy-dualmonitor

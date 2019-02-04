@@ -2058,7 +2058,7 @@ GtkTreeMenu.menu, GtkTreeMenu .menu, GtkMenuToolButton.menu, GtkMenuToolButton .
 #toolbar-popup, .menu {
   padding: 0;
   border-radius: 0;
-  border: 0;
+  border: 1px solid mix(#101010,#a0a0a0,0.21);
   background-color: #101010;
   color: #a0a0a0; }
   #toolbar-popup:selected, .menu:selected {
@@ -4026,6 +4026,10 @@ column-header .button:last-child .button {
 /* avoid double borders when a viewport is packed into a GtkScrolledWindow */
 GtkScrolledWindow GtkViewport.frame {
   border: 0; }
+
+GtkViewport {
+  background-color: mix(#464646,#252525,0.28);
+  color: mix(#f7f7f7,#e3e3e3,0.28); }
 
 /**************
  ! Window frame

@@ -1,9 +1,9 @@
 command=/usr/lib/i3blocks/$BLOCK_NAME
 
 [mediaplayer]
-command=mpc current || cat /home/matoro/documents/scripting/projects/cradio/song.txt || echo
+command=mpc current || bash -c 'pacmd list-sink-inputs | egrep "state:|media.name" | grep "state: RUNNING" --after-context=1 | tail --lines=1 | tail --bytes=+16 | sed "s/^\"//g" | sed "s/\"$//g" | sed "s/ - mpv$//g"' || echo
 label=♪
-interval=2
+interval=4
 separator=false
 
 #[keyindicator]

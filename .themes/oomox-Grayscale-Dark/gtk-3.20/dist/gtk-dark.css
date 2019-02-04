@@ -3837,11 +3837,11 @@ menubar, .menubar {
 menu,
 .menu,
 .context-menu {
-  border: 0;
   border-radius: 0;
   padding: 3px;
   background-color: #101010;
-  color: #a0a0a0; }
+  color: #a0a0a0;
+  border: 1px solid mix(#101010,#a0a0a0,0.21); }
   .csd menu, .csd
   .menu, .csd
   .context-menu {
@@ -7583,6 +7583,10 @@ frame.border-ridge > border {
 /* avoid double borders when a viewport is packed into a GtkScrolledWindow */
 scrolledwindow viewport.frame {
   border: 0; }
+
+viewport {
+  background-color: mix(#464646,#252525,0.28);
+  color: mix(#f7f7f7,#e3e3e3,0.28); }
 
 /***************
  ! Places view *
