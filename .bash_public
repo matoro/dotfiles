@@ -12,7 +12,7 @@ export BROWSER=firefox
 export TERMINAL=urxvt
 
 # env variables
-export QT_STYLE_OVERRIDE=gtk2
+export QT_STYLE_OVERRIDE=fusion
 export NO_AT_BRIDGE=1
 export TZ=":/etc/localtime"
 export SAL_USE_VCLPLUGIN=gtk
@@ -37,9 +37,10 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 # command default options
 alias ip='ip -color'
 alias ls='ls --color=auto --human-readable -l -v'
-alias grep='grep --color=auto'
 alias dfc='dfc -d -T -s -p -dev,tmpfs,overlay,devtmpfs'
 alias glances='glances --hide-kernel-threads'
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'
 
 # command verbosity
 alias cp='cp --verbose'
@@ -51,7 +52,7 @@ alias chmod='chmod --verbose'
 alias trash='trash --verbose'
 
 # utility commands
-alias weather='curl --insecure "https://wttr.in/"'
+alias weather='curl "https://wttr.in/?u"'
 alias largefiles='sudo du -a / | sort -n -r | head -n 100'
 alias badpkgs='for pkg in $(pacman -Qqd); do [[ -z $(comm -12 <(pactree -r $pkg -u | sort) <(pacman -Qqe | sort)) ]] && echo $pkg; done'
 alias rsync-default='rsync --archive --verbose --progress --compress --human-readable --update'
@@ -69,3 +70,18 @@ alias downmix-m4a='(for FILE in *.m4a ; do ffmpeg -i "$FILE" -f mp3 -ab 320000 -
 
 alias encrypt='openssl des3 <'
 alias decrypt='openssl des3 -d <'
+
+function noblank()
+{
+    DISPLAY=":0"
+    xset s off
+    xset s noblank
+    xset -dpms
+}
+
+# https://stackoverflow.com/a/37840948
+function urldecode()
+{
+    : "${*//+/ }"
+    echo -e "${_//%/\\x}";
+}

@@ -1,2 +1,3 @@
 .include /etc/pulse/default.pa
 load-module module-switch-on-connect
+load-module module-stream-restore restore_device=false

@@ -104,8 +104,9 @@ bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 
 # numpad hotkeys
+bindsym $mod+Home exec i3-sensible-terminal -name cu -e bash -c "cum update && cum download"
 bindsym $mod+Prior exec i3-sensible-terminal -name mutt -e bash -c "pkill mbsync || mutt"
-bindsym $mod+Next exec i3-sensible-terminal -name gpodder -e bash -c "gpo update && gpo download"
+bindsym $mod+Next exec i3-sensible-terminal -name gpodder -e bash -c "gpo update && gpo download && find ${HOME}/documents/podcasts/Downloads -type d -empty -print0 | xargs -0 rmdir -v"
 bindsym $mod+End exec i3-sensible-terminal -e tremc
 
 # letter hotkeys

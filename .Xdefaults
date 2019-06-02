@@ -73,3 +73,6 @@ URxvt.scrollTtyKeypress: true
 URxvt.saveLines: 65500
 URxvt.geometry: 95x25
 URxvt.internalBorder: 10
+
+Sxiv.background: #333333
+Sxiv.foreground: #AAAAAA
