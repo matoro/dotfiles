@@ -2,7 +2,7 @@
 PS1='[\u@\h \W]\$ '
 
 # ranger indentation
-[[ -n "$RANGER_LEVEL" ]] && PS1="$PS1"'(in ranger) '
+[[ -n "${RANGER_LEVEL}" ]] && PS1="${PS1}"'(in ranger) '
 
 # tools of choice
 export PAGER=less
@@ -18,10 +18,20 @@ export TZ=":/etc/localtime"
 export SAL_USE_VCLPLUGIN=gtk
 export COLORFGBG="default;default"
 
+# lower-case XDG dirs
+export XDG_DESKTOP_DIR="${HOME}/desktop"
+export XDG_DOWNLOAD_DIR="${HOME}/downloads"
+export XDG_TEMPLATES_DIR="${HOME}/templates"
+export XDG_PUBLICSHARE_DIR="${HOME}/public"
+export XDG_DOCUMENTS_DIR="${HOME}/documents"
+export XDG_MUSIC_DIR="${HOME}/music"
+export XDG_PICTURES_DIR="${HOME}/pictures"
+export XDG_VIDEOS_DIR="${HOME}/videos"
+
 #force configs to XDG dir
-export GNUPGHOME="$HOME/.config/gnupg"
-export LEDGER_FILE="$HOME/.config/hledger.journal"
-export XDG_CACHE_HOME="$HOME/.config/cache"
+export GNUPGHOME="${HOME}/.config/gnupg"
+export LEDGER_FILE="${HOME}/.config/hledger.journal"
+export XDG_CACHE_HOME="${HOME}/.config/cache"
 
 # less pager options
 # courtesy http://blog.0x1fff.com/2009/11/linux-tip-color-enabled-pager-less.html
@@ -41,6 +51,7 @@ alias dfc='dfc -d -T -s -p -dev,tmpfs,overlay,devtmpfs'
 alias glances='glances --hide-kernel-threads'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
+alias tmux='tmux -f "${HOME}/.config/tmux.conf"'
 
 # command verbosity
 alias cp='cp --verbose'
@@ -65,23 +76,37 @@ alias wwwscan='nmap -A -T4 -v'
 alias netscan='sudo nmap -v -Pn -sS -p80 -iR 0 -open'
 alias localscan='nmap -sn -v 192.168.0.0/24'
 
-alias downmix-flac='(for FILE in *.flac ; do ffmpeg -i "$FILE" -f mp3 -ab 320000 -map_metadata 0 -id3v2_version 3 "`basename "$FILE" .flac`.mp3" || break; done)'
-alias downmix-m4a='(for FILE in *.m4a ; do ffmpeg -i "$FILE" -f mp3 -ab 320000 -map_metadata 0 -id3v2_version 3 "`basename "$FILE" .m4a`.mp3" || break; done)'
+alias downmix-flac='(for FILE in *.flac ; do ffmpeg -i "${FILE}" -f mp3 -ab 320000 -map_metadata 0 -id3v2_version 3 "`basename "${FILE}" .flac`.mp3" || break; done)'
+alias downmix-m4a='(for FILE in *.m4a ; do ffmpeg -i "${FILE}" -f mp3 -ab 320000 -map_metadata 0 -id3v2_version 3 "`basename "${FILE}" .m4a`.mp3" || break; done)'
 
 alias encrypt='openssl des3 <'
 alias decrypt='openssl des3 -d <'
 
-function noblank()
-{
-    DISPLAY=":0"
-    xset s off
-    xset s noblank
-    xset -dpms
-}
+if type xset >/dev/null 2>&1 && xset q >/dev/null 2>&1
+then
+    DISPLAY=":0" xset s off
+    DISPLAY=":0" xset s noblank
+    DISPLAY=":0" xset -dpms
+    xrdb < "${HOME}/.Xdefaults"
+fi
 
 # https://stackoverflow.com/a/37840948
 function urldecode()
 {
     : "${*//+/ }"
     echo -e "${_//%/\\x}";
+}
+
+function rand
+{
+    if [[ "${1}" == "page" ]]
+    then
+        find . -type f | shuf | head --lines=1 | while read line ; do zathura "${line}" ; done
+    elif [[ "${1}" == "img" ]]
+    then
+        find . -type f | shuf | xargs sxiv -a
+    elif [[ "${1}" == "vid" ]]
+    then
+        find . -type f | shuf | head --lines=1 | while read line ; do mpv --no-resume-playback "${line}" ; done
+    fi
 }

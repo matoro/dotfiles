@@ -27,6 +27,7 @@
 !.config/ranger/rifle.conf
 !.config/ranger/scope.sh
 !.config/tdm/
+!.config/tmux.conf
 !.config/udiskie/config.yml
 !.config/user-dirs.dirs
 !.config/user-dirs.locale

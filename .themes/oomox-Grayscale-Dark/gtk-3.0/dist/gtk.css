@@ -441,7 +441,7 @@ GtkLabel:insensitive {
     box-shadow: inset 1px 0 #3f3f3f; }
     .spinbutton .button:insensitive {
       color: mix(#f7f7f7,#464646,0.7);
-      box-shadow: inset 1px 0 #3c3c3c; }
+      box-shadow: inset 1px 0 #3c3b3b; }
     .spinbutton .button:active, .spinbutton .button:checked, .spinbutton .button:hover {
       color: #f7f7f7; }
     .spinbutton .button:first-child {
@@ -564,7 +564,7 @@ GtkComboBox .separator {
   .entry:active, .entry:active:hover, .entry:active:focus, .entry:active:hover:focus, .entry:checked, .entry:checked:hover, .entry:checked:focus, .entry:checked:hover:focus {
     border-color: #313131; }
   .entry:insensitive {
-    border-color: #3c3c3c; }
+    border-color: #3c3b3b; }
   .entry:active:insensitive, .entry:checked:insensitive {
     border-color: #383838; }
   .entry:focus, .entry:active {
@@ -1594,7 +1594,7 @@ GtkInfoBar {
     .info .button:active, .info .button:active:hover, .info .button:active:focus, .info .button:active:hover:focus, .info .button:checked, .info .button:checked:hover, .info .button:checked:focus, .info .button:checked:hover:focus {
       border-color: rgba(49, 49, 49, 0.32); }
     .info .button:insensitive {
-      border-color: rgba(60, 60, 60, 0.32); }
+      border-color: rgba(60, 59, 59, 0.32); }
     .info .button:active:insensitive, .info .button:checked:insensitive {
       border-color: rgba(56, 56, 56, 0.32); }
     .info .button.flat {
@@ -1614,7 +1614,7 @@ GtkInfoBar {
       .info .button:hover:active, .info .button:hover:active:hover, .info .button:hover:active:focus, .info .button:hover:active:hover:focus, .info .button:hover:checked, .info .button:hover:checked:hover, .info .button:hover:checked:focus, .info .button:hover:checked:hover:focus, .info .button.flat:hover:active, .info .button.flat:hover:active:hover, .info .button.flat:hover:active:focus, .info .button.flat:hover:active:hover:focus, .info .button.flat:hover:checked, .info .button.flat:hover:checked:hover, .info .button.flat:hover:checked:focus, .info .button.flat:hover:checked:hover:focus {
         border-color: rgba(49, 49, 49, 0.4); }
       .info .button:hover:insensitive, .info .button.flat:hover:insensitive {
-        border-color: rgba(60, 60, 60, 0.4); }
+        border-color: rgba(60, 59, 59, 0.4); }
       .info .button:hover:active:insensitive, .info .button:hover:checked:insensitive, .info .button.flat:hover:active:insensitive, .info .button.flat:hover:checked:insensitive {
         border-color: rgba(56, 56, 56, 0.4); }
     .info .button:focus, .info .button.flat:focus {
@@ -1633,7 +1633,7 @@ GtkInfoBar {
         .info .button:focus:hover:active, .info .button:focus:hover:active:hover, .info .button:focus:hover:active:focus, .info .button:focus:hover:active:hover:focus, .info .button:focus:hover:checked, .info .button:focus:hover:checked:hover, .info .button:focus:hover:checked:focus, .info .button:focus:hover:checked:hover:focus, .info .button.flat:focus:hover:active, .info .button.flat:focus:hover:active:hover, .info .button.flat:focus:hover:active:focus, .info .button.flat:focus:hover:active:hover:focus, .info .button.flat:focus:hover:checked, .info .button.flat:focus:hover:checked:hover, .info .button.flat:focus:hover:checked:focus, .info .button.flat:focus:hover:checked:hover:focus {
           border-color: rgba(49, 49, 49, 0.4); }
         .info .button:focus:hover:insensitive, .info .button.flat:focus:hover:insensitive {
-          border-color: rgba(60, 60, 60, 0.4); }
+          border-color: rgba(60, 59, 59, 0.4); }
         .info .button:focus:hover:active:insensitive, .info .button:focus:hover:checked:insensitive, .info .button.flat:focus:hover:active:insensitive, .info .button.flat:focus:hover:checked:insensitive {
           border-color: rgba(56, 56, 56, 0.4); }
     .info .button:checked, .info .button:active, .info .button.flat:checked, .info .button.flat:active {
@@ -1647,7 +1647,7 @@ GtkInfoBar {
       .info .button:checked:active, .info .button:checked:active:hover, .info .button:checked:active:focus, .info .button:checked:active:hover:focus, .info .button:checked:checked, .info .button:checked:checked:hover, .info .button:checked:checked:focus, .info .button:checked:checked:hover:focus, .info .button:active:active, .info .button:active:active:hover, .info .button:active:active:focus, .info .button:active:active:hover:focus, .info .button:active:checked, .info .button:active:checked:hover, .info .button:active:checked:focus, .info .button:active:checked:hover:focus, .info .button.flat:checked:active, .info .button.flat:checked:active:hover, .info .button.flat:checked:active:focus, .info .button.flat:checked:active:hover:focus, .info .button.flat:checked:checked, .info .button.flat:checked:checked:hover, .info .button.flat:checked:checked:focus, .info .button.flat:checked:checked:hover:focus, .info .button.flat:active:active, .info .button.flat:active:active:hover, .info .button.flat:active:active:focus, .info .button.flat:active:active:hover:focus, .info .button.flat:active:checked, .info .button.flat:active:checked:hover, .info .button.flat:active:checked:focus, .info .button.flat:active:checked:hover:focus {
         border-color: rgba(49, 49, 49, 0.32); }
       .info .button:checked:insensitive, .info .button:active:insensitive, .info .button.flat:checked:insensitive, .info .button.flat:active:insensitive {
-        border-color: rgba(60, 60, 60, 0.32); }
+        border-color: rgba(60, 59, 59, 0.32); }
       .info .button:checked:active:insensitive, .info .button:checked:checked:insensitive, .info .button:active:active:insensitive, .info .button:active:checked:insensitive, .info .button.flat:checked:active:insensitive, .info .button.flat:checked:checked:insensitive, .info .button.flat:active:active:insensitive, .info .button.flat:active:checked:insensitive {
         border-color: rgba(56, 56, 56, 0.32); }
       .info .button:checked:focus, .info .button:checked:hover, .info .button:active:focus, .info .button:active:hover, .info .button.flat:checked:focus, .info .button.flat:checked:hover, .info .button.flat:active:focus, .info .button.flat:active:hover {
@@ -1693,7 +1693,7 @@ GtkInfoBar {
     .warning .button:active, .warning .button:active:hover, .warning .button:active:focus, .warning .button:active:hover:focus, .warning .button:checked, .warning .button:checked:hover, .warning .button:checked:focus, .warning .button:checked:hover:focus {
       border-color: rgba(49, 49, 49, 0.32); }
     .warning .button:insensitive {
-      border-color: rgba(60, 60, 60, 0.32); }
+      border-color: rgba(60, 59, 59, 0.32); }
     .warning .button:active:insensitive, .warning .button:checked:insensitive {
       border-color: rgba(56, 56, 56, 0.32); }
     .warning .button.flat {
@@ -1713,7 +1713,7 @@ GtkInfoBar {
       .warning .button:hover:active, .warning .button:hover:active:hover, .warning .button:hover:active:focus, .warning .button:hover:active:hover:focus, .warning .button:hover:checked, .warning .button:hover:checked:hover, .warning .button:hover:checked:focus, .warning .button:hover:checked:hover:focus, .warning .button.flat:hover:active, .warning .button.flat:hover:active:hover, .warning .button.flat:hover:active:focus, .warning .button.flat:hover:active:hover:focus, .warning .button.flat:hover:checked, .warning .button.flat:hover:checked:hover, .warning .button.flat:hover:checked:focus, .warning .button.flat:hover:checked:hover:focus {
         border-color: rgba(49, 49, 49, 0.4); }
       .warning .button:hover:insensitive, .warning .button.flat:hover:insensitive {
-        border-color: rgba(60, 60, 60, 0.4); }
+        border-color: rgba(60, 59, 59, 0.4); }
       .warning .button:hover:active:insensitive, .warning .button:hover:checked:insensitive, .warning .button.flat:hover:active:insensitive, .warning .button.flat:hover:checked:insensitive {
         border-color: rgba(56, 56, 56, 0.4); }
     .warning .button:focus, .warning .button.flat:focus {
@@ -1732,7 +1732,7 @@ GtkInfoBar {
         .warning .button:focus:hover:active, .warning .button:focus:hover:active:hover, .warning .button:focus:hover:active:focus, .warning .button:focus:hover:active:hover:focus, .warning .button:focus:hover:checked, .warning .button:focus:hover:checked:hover, .warning .button:focus:hover:checked:focus, .warning .button:focus:hover:checked:hover:focus, .warning .button.flat:focus:hover:active, .warning .button.flat:focus:hover:active:hover, .warning .button.flat:focus:hover:active:focus, .warning .button.flat:focus:hover:active:hover:focus, .warning .button.flat:focus:hover:checked, .warning .button.flat:focus:hover:checked:hover, .warning .button.flat:focus:hover:checked:focus, .warning .button.flat:focus:hover:checked:hover:focus {
           border-color: rgba(49, 49, 49, 0.4); }
         .warning .button:focus:hover:insensitive, .warning .button.flat:focus:hover:insensitive {
-          border-color: rgba(60, 60, 60, 0.4); }
+          border-color: rgba(60, 59, 59, 0.4); }
         .warning .button:focus:hover:active:insensitive, .warning .button:focus:hover:checked:insensitive, .warning .button.flat:focus:hover:active:insensitive, .warning .button.flat:focus:hover:checked:insensitive {
           border-color: rgba(56, 56, 56, 0.4); }
     .warning .button:checked, .warning .button:active, .warning .button.flat:checked, .warning .button.flat:active {
@@ -1746,7 +1746,7 @@ GtkInfoBar {
       .warning .button:checked:active, .warning .button:checked:active:hover, .warning .button:checked:active:focus, .warning .button:checked:active:hover:focus, .warning .button:checked:checked, .warning .button:checked:checked:hover, .warning .button:checked:checked:focus, .warning .button:checked:checked:hover:focus, .warning .button:active:active, .warning .button:active:active:hover, .warning .button:active:active:focus, .warning .button:active:active:hover:focus, .warning .button:active:checked, .warning .button:active:checked:hover, .warning .button:active:checked:focus, .warning .button:active:checked:hover:focus, .warning .button.flat:checked:active, .warning .button.flat:checked:active:hover, .warning .button.flat:checked:active:focus, .warning .button.flat:checked:active:hover:focus, .warning .button.flat:checked:checked, .warning .button.flat:checked:checked:hover, .warning .button.flat:checked:checked:focus, .warning .button.flat:checked:checked:hover:focus, .warning .button.flat:active:active, .warning .button.flat:active:active:hover, .warning .button.flat:active:active:focus, .warning .button.flat:active:active:hover:focus, .warning .button.flat:active:checked, .warning .button.flat:active:checked:hover, .warning .button.flat:active:checked:focus, .warning .button.flat:active:checked:hover:focus {
         border-color: rgba(49, 49, 49, 0.32); }
       .warning .button:checked:insensitive, .warning .button:active:insensitive, .warning .button.flat:checked:insensitive, .warning .button.flat:active:insensitive {
-        border-color: rgba(60, 60, 60, 0.32); }
+        border-color: rgba(60, 59, 59, 0.32); }
       .warning .button:checked:active:insensitive, .warning .button:checked:checked:insensitive, .warning .button:active:active:insensitive, .warning .button:active:checked:insensitive, .warning .button.flat:checked:active:insensitive, .warning .button.flat:checked:checked:insensitive, .warning .button.flat:active:active:insensitive, .warning .button.flat:active:checked:insensitive {
         border-color: rgba(56, 56, 56, 0.32); }
       .warning .button:checked:focus, .warning .button:checked:hover, .warning .button:active:focus, .warning .button:active:hover, .warning .button.flat:checked:focus, .warning .button.flat:checked:hover, .warning .button.flat:active:focus, .warning .button.flat:active:hover {
@@ -1792,7 +1792,7 @@ GtkInfoBar {
     .question .button:active, .question .button:active:hover, .question .button:active:focus, .question .button:active:hover:focus, .question .button:checked, .question .button:checked:hover, .question .button:checked:focus, .question .button:checked:hover:focus {
       border-color: rgba(49, 49, 49, 0.32); }
     .question .button:insensitive {
-      border-color: rgba(60, 60, 60, 0.32); }
+      border-color: rgba(60, 59, 59, 0.32); }
     .question .button:active:insensitive, .question .button:checked:insensitive {
       border-color: rgba(56, 56, 56, 0.32); }
     .question .button.flat {
@@ -1812,7 +1812,7 @@ GtkInfoBar {
       .question .button:hover:active, .question .button:hover:active:hover, .question .button:hover:active:focus, .question .button:hover:active:hover:focus, .question .button:hover:checked, .question .button:hover:checked:hover, .question .button:hover:checked:focus, .question .button:hover:checked:hover:focus, .question .button.flat:hover:active, .question .button.flat:hover:active:hover, .question .button.flat:hover:active:focus, .question .button.flat:hover:active:hover:focus, .question .button.flat:hover:checked, .question .button.flat:hover:checked:hover, .question .button.flat:hover:checked:focus, .question .button.flat:hover:checked:hover:focus {
         border-color: rgba(49, 49, 49, 0.4); }
       .question .button:hover:insensitive, .question .button.flat:hover:insensitive {
-        border-color: rgba(60, 60, 60, 0.4); }
+        border-color: rgba(60, 59, 59, 0.4); }
       .question .button:hover:active:insensitive, .question .button:hover:checked:insensitive, .question .button.flat:hover:active:insensitive, .question .button.flat:hover:checked:insensitive {
         border-color: rgba(56, 56, 56, 0.4); }
     .question .button:focus, .question .button.flat:focus {
@@ -1831,7 +1831,7 @@ GtkInfoBar {
         .question .button:focus:hover:active, .question .button:focus:hover:active:hover, .question .button:focus:hover:active:focus, .question .button:focus:hover:active:hover:focus, .question .button:focus:hover:checked, .question .button:focus:hover:checked:hover, .question .button:focus:hover:checked:focus, .question .button:focus:hover:checked:hover:focus, .question .button.flat:focus:hover:active, .question .button.flat:focus:hover:active:hover, .question .button.flat:focus:hover:active:focus, .question .button.flat:focus:hover:active:hover:focus, .question .button.flat:focus:hover:checked, .question .button.flat:focus:hover:checked:hover, .question .button.flat:focus:hover:checked:focus, .question .button.flat:focus:hover:checked:hover:focus {
           border-color: rgba(49, 49, 49, 0.4); }
         .question .button:focus:hover:insensitive, .question .button.flat:focus:hover:insensitive {
-          border-color: rgba(60, 60, 60, 0.4); }
+          border-color: rgba(60, 59, 59, 0.4); }
         .question .button:focus:hover:active:insensitive, .question .button:focus:hover:checked:insensitive, .question .button.flat:focus:hover:active:insensitive, .question .button.flat:focus:hover:checked:insensitive {
           border-color: rgba(56, 56, 56, 0.4); }
     .question .button:checked, .question .button:active, .question .button.flat:checked, .question .button.flat:active {
@@ -1845,7 +1845,7 @@ GtkInfoBar {
       .question .button:checked:active, .question .button:checked:active:hover, .question .button:checked:active:focus, .question .button:checked:active:hover:focus, .question .button:checked:checked, .question .button:checked:checked:hover, .question .button:checked:checked:focus, .question .button:checked:checked:hover:focus, .question .button:active:active, .question .button:active:active:hover, .question .button:active:active:focus, .question .button:active:active:hover:focus, .question .button:active:checked, .question .button:active:checked:hover, .question .button:active:checked:focus, .question .button:active:checked:hover:focus, .question .button.flat:checked:active, .question .button.flat:checked:active:hover, .question .button.flat:checked:active:focus, .question .button.flat:checked:active:hover:focus, .question .button.flat:checked:checked, .question .button.flat:checked:checked:hover, .question .button.flat:checked:checked:focus, .question .button.flat:checked:checked:hover:focus, .question .button.flat:active:active, .question .button.flat:active:active:hover, .question .button.flat:active:active:focus, .question .button.flat:active:active:hover:focus, .question .button.flat:active:checked, .question .button.flat:active:checked:hover, .question .button.flat:active:checked:focus, .question .button.flat:active:checked:hover:focus {
         border-color: rgba(49, 49, 49, 0.32); }
       .question .button:checked:insensitive, .question .button:active:insensitive, .question .button.flat:checked:insensitive, .question .button.flat:active:insensitive {
-        border-color: rgba(60, 60, 60, 0.32); }
+        border-color: rgba(60, 59, 59, 0.32); }
       .question .button:checked:active:insensitive, .question .button:checked:checked:insensitive, .question .button:active:active:insensitive, .question .button:active:checked:insensitive, .question .button.flat:checked:active:insensitive, .question .button.flat:checked:checked:insensitive, .question .button.flat:active:active:insensitive, .question .button.flat:active:checked:insensitive {
         border-color: rgba(56, 56, 56, 0.32); }
       .question .button:checked:focus, .question .button:checked:hover, .question .button:active:focus, .question .button:active:hover, .question .button.flat:checked:focus, .question .button.flat:checked:hover, .question .button.flat:active:focus, .question .button.flat:active:hover {
@@ -1891,7 +1891,7 @@ GtkInfoBar {
     .error .button:active, .error .button:active:hover, .error .button:active:focus, .error .button:active:hover:focus, .error .button:checked, .error .button:checked:hover, .error .button:checked:focus, .error .button:checked:hover:focus {
       border-color: rgba(49, 49, 49, 0.22); }
     .error .button:insensitive {
-      border-color: rgba(60, 60, 60, 0.22); }
+      border-color: rgba(60, 59, 59, 0.22); }
     .error .button:active:insensitive, .error .button:checked:insensitive {
       border-color: rgba(56, 56, 56, 0.22); }
     .error .button.flat {
@@ -1911,7 +1911,7 @@ GtkInfoBar {
       .error .button:hover:active, .error .button:hover:active:hover, .error .button:hover:active:focus, .error .button:hover:active:hover:focus, .error .button:hover:checked, .error .button:hover:checked:hover, .error .button:hover:checked:focus, .error .button:hover:checked:hover:focus, .error .button.flat:hover:active, .error .button.flat:hover:active:hover, .error .button.flat:hover:active:focus, .error .button.flat:hover:active:hover:focus, .error .button.flat:hover:checked, .error .button.flat:hover:checked:hover, .error .button.flat:hover:checked:focus, .error .button.flat:hover:checked:hover:focus {
         border-color: rgba(49, 49, 49, 0.3); }
       .error .button:hover:insensitive, .error .button.flat:hover:insensitive {
-        border-color: rgba(60, 60, 60, 0.3); }
+        border-color: rgba(60, 59, 59, 0.3); }
       .error .button:hover:active:insensitive, .error .button:hover:checked:insensitive, .error .button.flat:hover:active:insensitive, .error .button.flat:hover:checked:insensitive {
         border-color: rgba(56, 56, 56, 0.3); }
     .error .button:focus, .error .button.flat:focus {
@@ -1930,7 +1930,7 @@ GtkInfoBar {
         .error .button:focus:hover:active, .error .button:focus:hover:active:hover, .error .button:focus:hover:active:focus, .error .button:focus:hover:active:hover:focus, .error .button:focus:hover:checked, .error .button:focus:hover:checked:hover, .error .button:focus:hover:checked:focus, .error .button:focus:hover:checked:hover:focus, .error .button.flat:focus:hover:active, .error .button.flat:focus:hover:active:hover, .error .button.flat:focus:hover:active:focus, .error .button.flat:focus:hover:active:hover:focus, .error .button.flat:focus:hover:checked, .error .button.flat:focus:hover:checked:hover, .error .button.flat:focus:hover:checked:focus, .error .button.flat:focus:hover:checked:hover:focus {
           border-color: rgba(49, 49, 49, 0.3); }
         .error .button:focus:hover:insensitive, .error .button.flat:focus:hover:insensitive {
-          border-color: rgba(60, 60, 60, 0.3); }
+          border-color: rgba(60, 59, 59, 0.3); }
         .error .button:focus:hover:active:insensitive, .error .button:focus:hover:checked:insensitive, .error .button.flat:focus:hover:active:insensitive, .error .button.flat:focus:hover:checked:insensitive {
           border-color: rgba(56, 56, 56, 0.3); }
     .error .button:checked, .error .button:active, .error .button.flat:checked, .error .button.flat:active {
@@ -1944,7 +1944,7 @@ GtkInfoBar {
       .error .button:checked:active, .error .button:checked:active:hover, .error .button:checked:active:focus, .error .button:checked:active:hover:focus, .error .button:checked:checked, .error .button:checked:checked:hover, .error .button:checked:checked:focus, .error .button:checked:checked:hover:focus, .error .button:active:active, .error .button:active:active:hover, .error .button:active:active:focus, .error .button:active:active:hover:focus, .error .button:active:checked, .error .button:active:checked:hover, .error .button:active:checked:focus, .error .button:active:checked:hover:focus, .error .button.flat:checked:active, .error .button.flat:checked:active:hover, .error .button.flat:checked:active:focus, .error .button.flat:checked:active:hover:focus, .error .button.flat:checked:checked, .error .button.flat:checked:checked:hover, .error .button.flat:checked:checked:focus, .error .button.flat:checked:checked:hover:focus, .error .button.flat:active:active, .error .button.flat:active:active:hover, .error .button.flat:active:active:focus, .error .button.flat:active:active:hover:focus, .error .button.flat:active:checked, .error .button.flat:active:checked:hover, .error .button.flat:active:checked:focus, .error .button.flat:active:checked:hover:focus {
         border-color: rgba(49, 49, 49, 0.22); }
       .error .button:checked:insensitive, .error .button:active:insensitive, .error .button.flat:checked:insensitive, .error .button.flat:active:insensitive {
-        border-color: rgba(60, 60, 60, 0.22); }
+        border-color: rgba(60, 59, 59, 0.22); }
       .error .button:checked:active:insensitive, .error .button:checked:checked:insensitive, .error .button:active:active:insensitive, .error .button:active:checked:insensitive, .error .button.flat:checked:active:insensitive, .error .button.flat:checked:checked:insensitive, .error .button.flat:active:active:insensitive, .error .button.flat:active:checked:insensitive {
         border-color: rgba(56, 56, 56, 0.22); }
       .error .button:checked:focus, .error .button:checked:hover, .error .button:active:focus, .error .button:active:hover, .error .button.flat:checked:focus, .error .button.flat:checked:hover, .error .button.flat:active:focus, .error .button.flat:active:hover {
@@ -2221,7 +2221,7 @@ GtkPopover {
     GtkPopover .entry:active, GtkPopover .entry:active:hover, GtkPopover .entry:active:focus, GtkPopover .entry:active:hover:focus, GtkPopover .entry:checked, GtkPopover .entry:checked:hover, GtkPopover .entry:checked:focus, GtkPopover .entry:checked:hover:focus {
       border-color: #313131; }
     GtkPopover .entry:insensitive {
-      border-color: #3c3c3c; }
+      border-color: #3c3b3b; }
     GtkPopover .entry:active:insensitive, GtkPopover .entry:checked:insensitive {
       border-color: #383838; }
     GtkPopover .entry:focus, GtkPopover .entry:active {
@@ -2239,7 +2239,7 @@ GtkPopover {
     GtkPopover .button:focus, GtkPopover .button:hover {
       border-color: mix(#7c7c7c,rgba(185, 185, 185, 0.32),0.3); }
     GtkPopover .button:active, GtkPopover .button:active:hover, GtkPopover .button:active:focus, GtkPopover .button:active:hover:focus, GtkPopover .button:checked, GtkPopover .button:checked:hover, GtkPopover .button:checked:focus, GtkPopover .button:checked:hover:focus {
-      border-color: rgba(130, 130, 130, 0.32); }
+      border-color: rgba(130, 129, 129, 0.32); }
     GtkPopover .button:insensitive {
       border-color: rgba(157, 157, 157, 0.32); }
     GtkPopover .button:active:insensitive, GtkPopover .button:checked:insensitive {
@@ -2251,7 +2251,7 @@ GtkPopover {
       background-image: none;
       box-shadow: none; }
     GtkPopover .button:hover, GtkPopover .button.flat:hover {
-      background-color: #4a4a4a;
+      background-color: #4a4949;
       background-image: linear-gradient(to bottom, #4e4e4e, #454545);
       border-color: rgba(148, 148, 148, 0.4);
       color: #b9b9b9;
@@ -2259,13 +2259,13 @@ GtkPopover {
       GtkPopover .button:hover:focus, GtkPopover .button:hover:hover, GtkPopover .button.flat:hover:focus, GtkPopover .button.flat:hover:hover {
         border-color: mix(#7c7c7c,rgba(185, 185, 185, 0.4),0.3); }
       GtkPopover .button:hover:active, GtkPopover .button:hover:active:hover, GtkPopover .button:hover:active:focus, GtkPopover .button:hover:active:hover:focus, GtkPopover .button:hover:checked, GtkPopover .button:hover:checked:hover, GtkPopover .button:hover:checked:focus, GtkPopover .button:hover:checked:hover:focus, GtkPopover .button.flat:hover:active, GtkPopover .button.flat:hover:active:hover, GtkPopover .button.flat:hover:active:focus, GtkPopover .button.flat:hover:active:hover:focus, GtkPopover .button.flat:hover:checked, GtkPopover .button.flat:hover:checked:hover, GtkPopover .button.flat:hover:checked:focus, GtkPopover .button.flat:hover:checked:hover:focus {
-        border-color: rgba(130, 130, 130, 0.4); }
+        border-color: rgba(130, 129, 129, 0.4); }
       GtkPopover .button:hover:insensitive, GtkPopover .button.flat:hover:insensitive {
         border-color: rgba(157, 157, 157, 0.4); }
       GtkPopover .button:hover:active:insensitive, GtkPopover .button:hover:checked:insensitive, GtkPopover .button.flat:hover:active:insensitive, GtkPopover .button.flat:hover:checked:insensitive {
         border-color: rgba(148, 148, 148, 0.4); }
     GtkPopover .button:focus, GtkPopover .button.flat:focus {
-      background-color: #4a4a4a;
+      background-color: #4a4949;
       background-image: linear-gradient(to bottom, #4e4e4e, #454545);
       border-color: rgba(185, 185, 185, 0.32);
       color: #b9b9b9;
@@ -2278,7 +2278,7 @@ GtkPopover {
         GtkPopover .button:focus:hover:focus, GtkPopover .button:focus:hover:hover, GtkPopover .button.flat:focus:hover:focus, GtkPopover .button.flat:focus:hover:hover {
           border-color: mix(#7c7c7c,rgba(185, 185, 185, 0.4),0.3); }
         GtkPopover .button:focus:hover:active, GtkPopover .button:focus:hover:active:hover, GtkPopover .button:focus:hover:active:focus, GtkPopover .button:focus:hover:active:hover:focus, GtkPopover .button:focus:hover:checked, GtkPopover .button:focus:hover:checked:hover, GtkPopover .button:focus:hover:checked:focus, GtkPopover .button:focus:hover:checked:hover:focus, GtkPopover .button.flat:focus:hover:active, GtkPopover .button.flat:focus:hover:active:hover, GtkPopover .button.flat:focus:hover:active:focus, GtkPopover .button.flat:focus:hover:active:hover:focus, GtkPopover .button.flat:focus:hover:checked, GtkPopover .button.flat:focus:hover:checked:hover, GtkPopover .button.flat:focus:hover:checked:focus, GtkPopover .button.flat:focus:hover:checked:hover:focus {
-          border-color: rgba(130, 130, 130, 0.4); }
+          border-color: rgba(130, 129, 129, 0.4); }
         GtkPopover .button:focus:hover:insensitive, GtkPopover .button.flat:focus:hover:insensitive {
           border-color: rgba(157, 157, 157, 0.4); }
         GtkPopover .button:focus:hover:active:insensitive, GtkPopover .button:focus:hover:checked:insensitive, GtkPopover .button.flat:focus:hover:active:insensitive, GtkPopover .button.flat:focus:hover:checked:insensitive {
@@ -2292,7 +2292,7 @@ GtkPopover {
       GtkPopover .button:checked:focus, GtkPopover .button:checked:hover, GtkPopover .button:active:focus, GtkPopover .button:active:hover, GtkPopover .button.flat:checked:focus, GtkPopover .button.flat:checked:hover, GtkPopover .button.flat:active:focus, GtkPopover .button.flat:active:hover {
         border-color: mix(#7c7c7c,rgba(185, 185, 185, 0.32),0.3); }
       GtkPopover .button:checked:active, GtkPopover .button:checked:active:hover, GtkPopover .button:checked:active:focus, GtkPopover .button:checked:active:hover:focus, GtkPopover .button:checked:checked, GtkPopover .button:checked:checked:hover, GtkPopover .button:checked:checked:focus, GtkPopover .button:checked:checked:hover:focus, GtkPopover .button:active:active, GtkPopover .button:active:active:hover, GtkPopover .button:active:active:focus, GtkPopover .button:active:active:hover:focus, GtkPopover .button:active:checked, GtkPopover .button:active:checked:hover, GtkPopover .button:active:checked:focus, GtkPopover .button:active:checked:hover:focus, GtkPopover .button.flat:checked:active, GtkPopover .button.flat:checked:active:hover, GtkPopover .button.flat:checked:active:focus, GtkPopover .button.flat:checked:active:hover:focus, GtkPopover .button.flat:checked:checked, GtkPopover .button.flat:checked:checked:hover, GtkPopover .button.flat:checked:checked:focus, GtkPopover .button.flat:checked:checked:hover:focus, GtkPopover .button.flat:active:active, GtkPopover .button.flat:active:active:hover, GtkPopover .button.flat:active:active:focus, GtkPopover .button.flat:active:active:hover:focus, GtkPopover .button.flat:active:checked, GtkPopover .button.flat:active:checked:hover, GtkPopover .button.flat:active:checked:focus, GtkPopover .button.flat:active:checked:hover:focus {
-        border-color: rgba(130, 130, 130, 0.32); }
+        border-color: rgba(130, 129, 129, 0.32); }
       GtkPopover .button:checked:insensitive, GtkPopover .button:active:insensitive, GtkPopover .button.flat:checked:insensitive, GtkPopover .button.flat:active:insensitive {
         border-color: rgba(157, 157, 157, 0.32); }
       GtkPopover .button:checked:active:insensitive, GtkPopover .button:checked:checked:insensitive, GtkPopover .button:active:active:insensitive, GtkPopover .button:active:checked:insensitive, GtkPopover .button.flat:checked:active:insensitive, GtkPopover .button.flat:checked:checked:insensitive, GtkPopover .button.flat:active:active:insensitive, GtkPopover .button.flat:active:checked:insensitive {
@@ -2334,7 +2334,7 @@ GtkPopover {
 
 GtkModelButton.button, GtkModelButton.button:backdrop {
   background-color: transparent;
-  background-image: linear-gradient(to bottom, transparent, transparent);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   border-color: shade(alpha(currentColor,0.32),0.8);
   color: currentColor;
   box-shadow: 0 1px 2px -1px rgba(45, 45, 45, 0.22); }
@@ -2347,14 +2347,14 @@ GtkModelButton.button, GtkModelButton.button:backdrop {
   GtkModelButton.button:active:insensitive, GtkModelButton.button:checked:insensitive, GtkModelButton.button:backdrop:active:insensitive, GtkModelButton.button:backdrop:checked:insensitive {
     border-color: shade(alpha(currentColor,0.32),0.8); }
   GtkModelButton.button.flat, GtkModelButton.button:backdrop.flat {
-    border-color: transparent;
+    border-color: rgba(0, 0, 0, 0);
     color: currentColor;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     box-shadow: none; }
   GtkModelButton.button:hover, GtkModelButton.button.flat:hover, GtkModelButton.button:backdrop:hover, GtkModelButton.button:backdrop.flat:hover {
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, transparent, transparent);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
     border-color: shade(alpha(currentColor,0.4),0.8);
     color: currentColor;
     box-shadow: 0 1px 2px -1px rgba(45, 45, 45, 0.32); }
@@ -2367,14 +2367,14 @@ GtkModelButton.button, GtkModelButton.button:backdrop {
     GtkModelButton.button:hover:active:insensitive, GtkModelButton.button:hover:checked:insensitive, GtkModelButton.button.flat:hover:active:insensitive, GtkModelButton.button.flat:hover:checked:insensitive, GtkModelButton.button:backdrop:hover:active:insensitive, GtkModelButton.button:backdrop:hover:checked:insensitive, GtkModelButton.button:backdrop.flat:hover:active:insensitive, GtkModelButton.button:backdrop.flat:hover:checked:insensitive {
       border-color: shade(alpha(currentColor,0.4),0.8); }
   GtkModelButton.button:focus, GtkModelButton.button.flat:focus, GtkModelButton.button:backdrop:focus, GtkModelButton.button:backdrop.flat:focus {
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, transparent, transparent);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
     border-color: alpha(currentColor,0.32);
     color: currentColor;
     box-shadow: 0 1px 2px -1px rgba(45, 45, 45, 0.42); }
     GtkModelButton.button:focus:hover, GtkModelButton.button.flat:focus:hover, GtkModelButton.button:backdrop:focus:hover, GtkModelButton.button:backdrop.flat:focus:hover {
-      background-color: transparent;
-      background-image: linear-gradient(to bottom, transparent, transparent);
+      background-color: rgba(0, 0, 0, 0);
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
       border-color: shade(alpha(currentColor,0.4),0.8);
       box-shadow: 0 1px 2px -1px rgba(45, 45, 45, 0.48); }
       GtkModelButton.button:focus:hover:focus, GtkModelButton.button:focus:hover:hover, GtkModelButton.button.flat:focus:hover:focus, GtkModelButton.button.flat:focus:hover:hover, GtkModelButton.button:backdrop:focus:hover:focus, GtkModelButton.button:backdrop:focus:hover:hover, GtkModelButton.button:backdrop.flat:focus:hover:focus, GtkModelButton.button:backdrop.flat:focus:hover:hover {
@@ -2422,9 +2422,9 @@ GtkModelButton.button, GtkModelButton.button:backdrop {
       color: rgba(16, 16, 16, 0.85); }
   GtkModelButton.button.separator, GtkModelButton.button .separator, GtkModelButton.button:backdrop.separator, GtkModelButton.button:backdrop .separator {
     border: 1px solid currentColor;
-    color: transparent; }
+    color: rgba(0, 0, 0, 0); }
     GtkModelButton.button.separator:insensitive, GtkModelButton.button .separator:insensitive, GtkModelButton.button:backdrop.separator:insensitive, GtkModelButton.button:backdrop .separator:insensitive {
-      color: transparent; }
+      color: rgba(0, 0, 0, 0); }
   GtkModelButton.button:focus:hover, GtkModelButton.button.flat:checked:hover, GtkModelButton.button:active:hover, GtkModelButton.button:hover, GtkModelButton.button:selected, GtkModelButton.button:backdrop:focus:hover, GtkModelButton.button:backdrop.flat:checked:hover, GtkModelButton.button:backdrop:active:hover, GtkModelButton.button:backdrop:hover, GtkModelButton.button:backdrop:selected {
     background-image: none;
     background-color: #7c7c7c;
@@ -2756,7 +2756,7 @@ GtkLabel.pin-label {
     .notebook tab GtkLabel {
       color: mix(#f7f7f7,#464646,0.3); }
     .notebook tab.reorderable-page:hover {
-      background-color: #3c3c3c;
+      background-color: #3c3b3b;
       border-left: 0;
       border-right: 0;
       /* using box shadows instead of borders due to slanted edges */
@@ -2765,7 +2765,7 @@ GtkLabel.pin-label {
       background-color: #3f3f3f;
       border-left: 0;
       border-right: 0;
-      box-shadow: inset 0 3px rgba(91, 91, 91, 0.03), inset 0 2px rgba(91, 91, 91, 0.03), inset 0 1px rgba(91, 91, 91, 0.03), inset 1px 0 #353535, inset -1px 0 #353535; }
+      box-shadow: inset 0 3px rgba(91, 91, 91, 0.03), inset 0 2px rgba(91, 91, 91, 0.03), inset 0 1px rgba(91, 91, 91, 0.03), inset 1px 0 #353434, inset -1px 0 #353434; }
   .notebook .prelight-page, .notebook .prelight-page GtkLabel {
     color: mix(#f7f7f7,#464646,0.15); }
   .notebook .active-page, .notebook .active-page GtkLabel {
@@ -4023,13 +4023,10 @@ column-header .button:last-child .button {
   .frame.flat {
     border: 0; }
 
-/* avoid double borders when a viewport is packed into a GtkScrolledWindow */
-GtkScrolledWindow GtkViewport.frame {
-  border: 0; }
-
-GtkViewport {
+.content-view {
   background-color: mix(#464646,#252525,0.28);
-  color: mix(#f7f7f7,#e3e3e3,0.28); }
+  color: mix(#f7f7f7,#e3e3e3,0.18);
+  border: 1px solid shade(mix(#464646,#252525,0.78),0.8); }
 
 /**************
  ! Window frame
@@ -4048,8 +4045,8 @@ GtkViewport {
   .window-frame.tiled {
     border-radius: 0; }
   .window-frame.solid-csd {
-    border-radius: 0px 0px 0 0;
-    margin: 1px;
+    border-radius: 0;
+    margin: 0;
     background-color: mix(#0b0b0b,#a0a0a0,0.21);
     box-shadow: none; }
   .window-frame.csd.popup {
