@@ -17,6 +17,7 @@ export NO_AT_BRIDGE=1
 export TZ=":/etc/localtime"
 export SAL_USE_VCLPLUGIN=gtk
 export COLORFGBG="default;default"
+export HISTCONTROL=ignorespace
 
 # lower-case XDG dirs
 export XDG_DESKTOP_DIR="${HOME}/desktop"
@@ -104,7 +105,7 @@ function rand
         find . -type f | shuf | head --lines=1 | while read line ; do zathura "${line}" ; done
     elif [[ "${1}" == "img" ]]
     then
-        find . -type f | shuf | xargs sxiv -a
+        find . -type f -print0 | shuf -z | xargs -0 sxiv -a
     elif [[ "${1}" == "vid" ]]
     then
         find . -type f | shuf | head --lines=1 | while read line ; do mpv --no-resume-playback "${line}" ; done

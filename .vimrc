@@ -13,6 +13,19 @@ set expandtab
 set autoindent
 set backspace=indent,eol,start
 
+" https://vim.fandom.com/wiki/Working_with_Unicode
+if has("multi_byte")
+  if &termencoding == ""
+    let &termencoding = &encoding
+  endif
+  set encoding=utf-8
+  setglobal fileencoding=utf-8
+  " Uncomment to have 'bomb' on by default for new files.
+  " Note, this will not apply to the first, empty buffer created at Vim startup.
+  "setglobal bomb
+  set fileencodings=ucs-bom,utf-8,latin1
+endif
+
 " neocomplete options
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
