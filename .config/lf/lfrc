@@ -1,0 +1,77 @@
+# interpreter for shell commands (needs to be POSIX compatible)
+set shell sh
+
+# set internal field separator (IFS) to "\n" for shell commands
+set ifs "\n"
+
+# leave some space at the top and the bottom of the screen
+# set scrolloff 10
+
+# show documentation (overrides 'search-back' command)
+map ? $lf -doc | less
+
+set info size
+map S $$SHELL
+map <delete> $gio trash $fx
+map D rm -v $fx
+
+# define a custom 'open-file' command
+# 'open-file' is called by 'open' when current file is not a directory. You may
+# want to use either file extensions and/or mime types here. Below uses an
+# editor for text files and a file opener for the rest.
+cmd open ${{
+    if [[ $f == *.cbz ]]
+    then
+        nohup zathura $fx > /dev/null 2>/dev/null &
+    elif [[ $f == *.gamecontroller.amgp ]]
+    then
+        nohup antimicro $fx > /dev/null 2>/dev/null &
+    else
+        case $(file --mime-type --dereference --brief $fx) in
+            application/x-wine-extension-ini) ;&
+            application/json) ;&
+            inode/x-empty) ;&
+            text/*) vim $fx;;
+            image/*) nohup sxiv -a $fx > /dev/null 2> /dev/null &;;
+            application/pdf) nohup zathura $fx > /dev/null 2> /dev/null &;;
+            application/x-tar) ;&
+            application/x-bzip2) ;&
+            application/x-cpio) ;&
+            application/x-debian-package) ;&
+            application/x-rar-compressed) ;&
+            application/x-xz) ;&
+            application/x-7z-compressed) ;&
+            application/java-archive) ;&
+            application/zip) ;&
+            application/vnd.debian.binary-package) ;&
+            application/vnd.ms-cab-compressed)
+                als $fx | $PAGER;;
+            *) for f in $fx; do nohup xdg-open $fx > /dev/null 2> /dev/null & done;;
+        esac
+    fi
+}}
+
+# remove current file or selected files (prompting)
+cmd remove ${{
+    printf "$fx\n"
+    printf "remove?[y/n]"
+    read ans
+    [ $ans = "y" ] && rm -rf $fx
+}}
+
+# rename current file without overwrite
+cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
+map r push :rename<space>
+
+map gc :cd ~/documents/college/classes/
+map gd :cd /run/media/matoro/
+map ge :cd /etc/
+map gf :cd ~/.config/
+map gl :cd ~/.local/share/
+map gm :cd ~/.mozilla/
+map gn :cd ~/desktop/mnt/server/
+map gp :cd ~/documents/podcasts/Downloads/
+map gr :cd ~/documents/manga/
+map gs :cd ~/documents/scripting/
+map gu :cd /usr/
+map g/ :cd /

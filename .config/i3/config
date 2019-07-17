@@ -116,7 +116,7 @@ bindsym $mod+i exec i3-input
 bindsym $mod+m exec i3-sensible-terminal -e ncmpcpp
 bindsym $mod+b exec pavucontrol
 bindsym $mod+k exec i3-sensible-terminal -e htop
-bindsym $mod+u exec i3-sensible-terminal -T sysupgrade -e yaourt --sync --refresh --sysupgrade --aur
+bindsym $mod+u exec i3-sensible-terminal -T sysupgrade -e yay --sync --refresh --sysupgrade
 bindsym $mod+j exec i3-sensible-terminal -e bashmount
 bindsym $mod+p exec systemctl suspend
 bindsym $mod+y exec "sleep 1; xset dpms force off"
