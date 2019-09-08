@@ -26,3 +26,5 @@ set font "Inconsolata 11"
 set guioptions ""
 
 set selection-clipboard clipboard
+set scroll-page-aware
+# set smooth-scroll

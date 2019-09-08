@@ -1,4 +1,4 @@
-command=/usr/lib/i3blocks/$BLOCK_NAME
+command=/usr/lib/i3blocks/$BLOCK_NAME/$BLOCK_NAME
 
 [mediaplayer]
 command=mpc current || bash -c 'pacmd list-sink-inputs | egrep "state:|media.name" | grep "state: RUNNING" --after-context=1 | tail --lines=1 | tail --bytes=+16 | sed "s/^\"//g" | sed "s/\"$//g" | sed "s/ - mpv$//g"' || echo
@@ -24,23 +24,23 @@ interval=2
 separator=false
 
 [memory]
-label=
+label= 
 separator=false
 interval=4
 
 [memory]
-label=
+label= 
 instance=swap
 separator=false
 interval=4
 
 [disk]
-label=
+label= 
 interval=8
 separator=false
 
 [iface]
-label=
+label= 
 interval=2
 
 [wifi]
@@ -53,24 +53,24 @@ separator=false
 min_width=90
 
 [cpu_usage]
-label=
+label= 
 interval=4
 separator=false
 min_width=60
 
 [cpu_frequency]
-label=
+label= 
 interval=8
 separator=false
 command=cpupower frequency-info | grep "asserted" | cut --fields=2- --delimiter=":" | cut --characters=2- | cut --fields=1-2 --delimiter=" "
 
 [temperature]
-label=
+label= 
 interval=8
 separator=false
 
 [battery]
-label=⚡
+label=⚡ 
 interval=8
 separator=false
 
