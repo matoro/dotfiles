@@ -20,7 +20,7 @@ map D rm -v $fx
 # want to use either file extensions and/or mime types here. Below uses an
 # editor for text files and a file opener for the rest.
 cmd open ${{
-    if [[ $f == *.cbz ]]
+    if [[ $f == *.cbz || $f == *.epub ]]
     then
         nohup zathura $fx > /dev/null 2>/dev/null &
     elif [[ $f == *.gamecontroller.amgp ]]
@@ -31,14 +31,18 @@ cmd open ${{
             application/x-wine-extension-ini) ;&
             application/json) ;&
             inode/x-empty) ;&
+            message/rfc822) ;&
             text/*) vim $fx;;
             image/*) nohup sxiv -a $fx > /dev/null 2> /dev/null &;;
             application/pdf) nohup zathura $fx > /dev/null 2> /dev/null &;;
+            application/gzip) ;&
             application/x-tar) ;&
             application/x-bzip2) ;&
             application/x-cpio) ;&
             application/x-debian-package) ;&
+            application/x-rar) ;&
             application/x-rar-compressed) ;&
+            application/x-tar) ;&
             application/x-xz) ;&
             application/x-7z-compressed) ;&
             application/java-archive) ;&
@@ -74,4 +78,5 @@ map gp :cd ~/documents/podcasts/Downloads/
 map gr :cd ~/documents/manga/
 map gs :cd ~/documents/scripting/
 map gu :cd /usr/
+map gv :cd /var/
 map g/ :cd /

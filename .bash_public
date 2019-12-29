@@ -75,7 +75,7 @@ alias rsync-default='rsync --archive --verbose --progress --compress --human-rea
 alias pingtest='ping -v -c 4 -O -D archlinux.org'
 alias pingstd='ping -v -c 4 -O -D'
 alias dl='curl --location --remote-name'
-alias genpass='tr -cd "[a-zA-Z0-9]" < /dev/urandom | head --bytes=120 | tee >(xsel --input --clipboard) && echo'
+alias genpass='tr -cd "a-zA-Z0-9" < /dev/urandom | head --bytes=120 | tee >(xsel --input --clipboard) && echo'
 
 alias wwwscan='nmap -A -T4 -v'
 alias netscan='sudo nmap -v -Pn -sS -p80 -iR 0 -open'
@@ -106,12 +106,12 @@ function rand
 {
     if [[ "${1}" == "page" ]]
     then
-        find . -type f | shuf | head --lines=1 | while read line ; do zathura "${line}" ; done
+        find . -type f | shuf | head --lines=1 | while read line ; do echo "${line}" && zathura "${line}" ; done
     elif [[ "${1}" == "img" ]]
     then
         find . -type f -print0 | shuf -z | xargs -0 sxiv -a
     elif [[ "${1}" == "vid" ]]
     then
-        find . -type f | shuf | head --lines=1 | while read line ; do mpv --no-resume-playback "${line}" ; done
+        find . -type f | shuf | head --lines=1 | while read line ; do echo "${line}" && mpv --no-resume-playback "${line}" ; done
     fi
 }

@@ -122,8 +122,8 @@ bindsym $mod+p exec systemctl suspend
 bindsym $mod+y exec "sleep 1; xset dpms force off"
 bindsym Print exec scrot -e 'mv $f ~/pictures/screenshots/'
 bindsym XF86AudioMute exec amixer -q sset Master toggle
-bindsym XF86AudioLowerVolume exec amixer -q sset Master 5%-
-bindsym XF86AudioRaiseVolume exec amixer -q sset Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -q sset Master 4%-
+bindsym XF86AudioRaiseVolume exec amixer -q sset Master 4%+
 bindsym $mod+F2 exec amixer -q sset Master toggle
 bindsym $mod+F3 exec amixer -q sset Master 5%-
 bindsym $mod+F4 exec amixer -q sset Master 5%+
