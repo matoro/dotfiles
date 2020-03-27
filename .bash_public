@@ -89,10 +89,10 @@ alias decrypt='openssl des3 -d <'
 
 if type xset >/dev/null 2>&1 && xset q >/dev/null 2>&1
 then
+    xrdb < "${HOME}/.Xdefaults"
     DISPLAY=":0" xset s off
     DISPLAY=":0" xset s noblank
     DISPLAY=":0" xset -dpms
-    xrdb < "${HOME}/.Xdefaults"
 fi
 
 # https://stackoverflow.com/a/37840948

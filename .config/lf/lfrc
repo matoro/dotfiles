@@ -32,6 +32,7 @@ cmd open ${{
             application/json) ;&
             inode/x-empty) ;&
             message/rfc822) ;&
+            application/csv) ;&
             text/*) vim $fx;;
             image/*) nohup sxiv -a $fx > /dev/null 2> /dev/null &;;
             application/pdf) nohup zathura $fx > /dev/null 2> /dev/null &;;
