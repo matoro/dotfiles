@@ -1,5 +1,5 @@
 # interpreter for shell commands (needs to be POSIX compatible)
-set shell sh
+set shell bash
 
 # set internal field separator (IFS) to "\n" for shell commands
 set ifs "\n"
@@ -13,6 +13,7 @@ map ? $lf -doc | less
 set info size
 map S $$SHELL
 map <delete> $gio trash $fx
+map L less $fx
 map D rm -v $fx
 
 # define a custom 'open-file' command
@@ -26,6 +27,12 @@ cmd open ${{
     elif [[ $f == *.gamecontroller.amgp ]]
     then
         nohup antimicro $fx > /dev/null 2>/dev/null &
+    elif [[ $f == *.log.gz ]]
+    then
+        zless $fx
+    elif [[ $f == *.bz2 ]]
+    then
+        bzless $fx
     else
         case $(file --mime-type --dereference --brief $fx) in
             application/x-wine-extension-ini) ;&
@@ -68,10 +75,12 @@ cmd remove ${{
 cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
 map r push :rename<space>
 
+map gb :cd ~/desktop/mnt/backup/
 map gc :cd ~/documents/college/classes/
-map gd :cd /run/media/matoro/
+map gd :cd /media
 map ge :cd /etc/
 map gf :cd ~/.config/
+map gj :cd ~/desktop/mnt/phone/
 map gl :cd ~/.local/share/
 map gm :cd ~/.mozilla/
 map gn :cd ~/desktop/mnt/server/

@@ -9,14 +9,14 @@ new_float none
 for_window [class="^.*"] border pixel 0
 
 # enable smart borders [i3-gaps]
-smart_borders on
+#smart_borders on
 
 # set gaps [i3-gaps]
 gaps inner 7
 gaps outer 5
 
 # set default layout to tabbed
-workspace_layout tabbed
+#workspace_layout tabbed
 
 # color definitions
 set $dark #262a33
@@ -25,6 +25,7 @@ set $blue #5294e2
 set $lgrey #3e424d
 set $white #ffffff
 set $mgrey #b9c2cd
+set $black #000000
 
 # font
 font pango:Inconsolata 9
@@ -104,23 +105,24 @@ bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 
 # numpad hotkeys
-bindsym $mod+Home exec i3-sensible-terminal -name cu -e bash -c "cum update && cum download"
+bindsym $mod+Home exec i3-sensible-terminal -name cu -e bash -c "novel-sync && cu2 update && cu2 download"
 bindsym $mod+Prior exec i3-sensible-terminal -name mutt -e bash -c "pkill mbsync || mutt"
-bindsym $mod+Next exec i3-sensible-terminal -name gpodder -e bash -c "gpo update && gpo download && find ${HOME}/documents/podcasts/Downloads -type d -empty -print0 | xargs -0 rmdir -v"
+bindsym $mod+Next exec "i3-sensible-terminal -name gpodder -e bash -c 'mbsync -Va ; gpo update && gpo download && find ${HOME}/documents/podcasts/Downloads -type d -empty -print0 | xargs -0 rmdir -v'"
 bindsym $mod+End exec i3-sensible-terminal -e tremc
 
 # letter hotkeys
-bindsym $mod+l exec i3lock-fancy-dualmonitor
+bindsym $mod+l exec /usr/local/lib/i3lock-fancy/i3lock-fancy
 bindsym $mod+z exec i3-sensible-terminal -e lf
 bindsym $mod+i exec i3-input
 bindsym $mod+m exec i3-sensible-terminal -e ncmpcpp
 bindsym $mod+b exec pavucontrol
 bindsym $mod+k exec i3-sensible-terminal -e htop
-bindsym $mod+u exec i3-sensible-terminal -T sysupgrade -e yay --sync --refresh --sysupgrade
+bindsym $mod+u exec i3-sensible-terminal -T sysupgrade -e /usr/local/bin/sysupgrade
 bindsym $mod+j exec i3-sensible-terminal -e bashmount
 bindsym $mod+p exec systemctl suspend
 bindsym $mod+y exec "sleep 1; xset dpms force off"
-bindsym Print exec scrot -e 'mv $f ~/pictures/screenshots/'
+bindsym $mod+Print exec "maim -u | tee ${HOME}/pictures/screenshots/maim_$(date '+%s').png | xsel -ib"
+bindsym Print exec "maim -s -u | tee ${HOME}/pictures/screenshots/maim_$(date '+%s').png | xsel -ib"
 bindsym XF86AudioMute exec amixer -q sset Master toggle
 bindsym XF86AudioLowerVolume exec amixer -q sset Master 4%-
 bindsym XF86AudioRaiseVolume exec amixer -q sset Master 4%+
@@ -164,7 +166,8 @@ bar {
 	i3bar_command i3bar
         status_command i3blocks
 	colors {
-		background $grey
+		#background $grey
+        background $black
 		statusline $mgrey
 		separator $grey
 		focused_workspace $grey $grey $white
@@ -175,13 +178,17 @@ bar {
 }
 
 # set client colors
-client.focused $dark $grey $white $lgrey
-client.unfocused $dark $grey $mgrey $lgrey
-client.focused_inactive $dark $grey $mgrey $lgrey
+#client.focused $dark $grey $white $lgrey
+client.focused $dark $black $white $lgrey
+#client.unfocused $dark $grey $mgrey $lgrey
+client.unfocused $black $black $mgrey $lgrey
+#client.focused_inactive $dark $grey $mgrey $lgrey
+client.focused_inactive $dark $black $mgrey $lgrey
 client.urgent $dark $grey $mgrey $lgrey
 
 #initial processes
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id compton
+exec --no-startup-id picom
 exec --no-startup-id unclutter
-exec --no-startup-id xss-lock i3lock-fancy-dualmonitor
+exec --no-startup-id xss-lock /usr/local/lib/i3lock-fancy/i3lock-fancy
+exec --no-startup-id start-pulseaudio-x11

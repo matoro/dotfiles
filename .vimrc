@@ -59,3 +59,8 @@ let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
+
+let g:leave_my_textwidth_alone = 'true'
+set textwidth=0
+set noswapfile
+set modeline

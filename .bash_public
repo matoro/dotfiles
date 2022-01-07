@@ -16,12 +16,15 @@ export BROWSER=firefox
 export TERMINAL=urxvt
 
 # env variables
-export QT_STYLE_OVERRIDE=fusion
+export QT_QPA_PLATFORMTHEME=qt5ct
 export NO_AT_BRIDGE=1
 export TZ=":/etc/localtime"
 export SAL_USE_VCLPLUGIN=gtk
 export COLORFGBG="default;default"
 export HISTCONTROL=ignorespace
+export mesa_glthread=true
+# https://old.reddit.com/r/archlinux/comments/htq7hk/urxvt_segfaults_on_exit_for_whatever_reason/g3a74u3/
+export PERL_DESTRUCT_LEVEL=2
 
 # lower-case XDG dirs
 export XDG_DESKTOP_DIR="${HOME}/desktop"
@@ -37,6 +40,7 @@ export XDG_VIDEOS_DIR="${HOME}/videos"
 export GNUPGHOME="${HOME}/.config/gnupg"
 export LEDGER_FILE="${HOME}/.config/hledger.journal"
 export XDG_CACHE_HOME="${HOME}/.config/cache"
+export PASSWORD_STORE_DIR="${HOME}/.config/password-store"
 
 # less pager options
 # courtesy http://blog.0x1fff.com/2009/11/linux-tip-color-enabled-pager-less.html
@@ -52,7 +56,7 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 # command default options
 alias ip='ip -color'
 alias ls='ls --color=auto --human-readable -l -v'
-alias dfc='dfc -d -T -s -p -dev,tmpfs,overlay,devtmpfs'
+alias dfc='dfc -d -T -s -p -dev,tmpfs,overlay,devtmpfs,cgroup_root'
 alias glances='glances --hide-kernel-threads'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
@@ -75,7 +79,6 @@ alias rsync-default='rsync --archive --verbose --progress -zz --human-readable -
 alias pingtest='ping -v -c 4 -O -D archlinux.org'
 alias pingstd='ping -v -c 4 -O -D'
 alias dl='curl --location --remote-name'
-alias genpass='tr -cd "a-zA-Z0-9" < /dev/urandom | head --bytes=120 | tee >(xsel --input --clipboard) && echo'
 
 alias wwwscan='nmap -A -T4 -v'
 alias netscan='sudo nmap -v -Pn -sS -p80 -iR 0 -open'
@@ -87,7 +90,7 @@ alias downmix-m4a='(for FILE in *.m4a ; do ffmpeg -i "${FILE}" -f mp3 -ab 320000
 alias encrypt='openssl des3 <'
 alias decrypt='openssl des3 -d <'
 
-if type xset >/dev/null 2>&1 && xset q >/dev/null 2>&1
+if [[ -z "${SSH_CONNECTION}" ]] && type xset >/dev/null 2>&1 && xset q >/dev/null 2>&1
 then
     xrdb < "${HOME}/.Xdefaults"
     DISPLAY=":0" xset s off
@@ -114,4 +117,10 @@ function rand
     then
         find . -type f | shuf | head --lines=1 | while read line ; do echo "${line}" && mpv --no-resume-playback "${line}" ; done
     fi
+}
+
+function genpass
+{
+    tr -cd "a-zA-Z0-9" < /dev/urandom | head --bytes="${1:-120}" | tee >(xsel --input --clipboard)
+    echo
 }
